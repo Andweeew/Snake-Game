@@ -47,7 +47,7 @@ var snakeGame = {
     // Function para mag-update sa game state
     update: function() {
         if (this.GameOver) {
-            alert("HI SHEEESH BUANGA");
+            alert("GAME OVER!");
             this.gameOver();
             return;
         }
