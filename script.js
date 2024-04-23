@@ -91,7 +91,7 @@ var snakeGame = {
         this.displayScores();
     },
 
-    // Function para sa pagkaon sa pagkaon
+    // Function para sa pagkaon sa snake
     eatFood: function() {
         this.currentScore += 10;
         this.highestScore = Math.max(this.currentScore, this.highestScore);
