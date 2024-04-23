@@ -55,7 +55,7 @@ var snakeGame = {
         this.context.fillStyle = "black";
         this.context.fillRect(0, 0, this.board.width, this.board.height);
 
-        this.context.fillStyle = "green";
+        this.context.fillStyle = "red";
         this.context.fillRect(this.foodx, this.foody, this.blocksize, this.blocksize);
 
         if (this.snakeX === this.foodx && this.snakeY === this.foody) {
@@ -72,7 +72,7 @@ var snakeGame = {
         this.snakeX += this.velocityX * this.blocksize;
         this.snakeY += this.velocityY * this.blocksize;
 
-        this.context.fillStyle = "red";
+        this.context.fillStyle = "lime";
         for (let i = 0; i < this.snakebody.length; i++) {
             this.context.fillRect(this.snakebody[i][0], this.snakebody[i][1], this.blocksize, this.blocksize);
         }
